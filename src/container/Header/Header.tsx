@@ -42,8 +42,8 @@ const Header = () => {
         </div>
       </motion.div>
 
-      <Avatar/>
-      
+      <Avatar />
+
       <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}

@@ -7,21 +7,18 @@ import { useState } from "react";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
-  const elements = ["home", "sobre", "experiências", "projetos", "contato"]
-  
+  const elements = ["home", "sobre", "experiências", "projetos", "contato"];
+
   return (
     <nav className="app__navbar">
-      <div className="app__navbar-logo">
-      </div>
+      <div className="app__navbar-logo"></div>
       <ul className="app__navbar-links">
-        {elements.map(
-          (item) => (
-            <li className="app__flex p-text" key={`link-${item}`}>
-              <div />
-              <a href={`#${item}`}>{item}</a>
-            </li>
-          )
-        )}
+        {elements.map((item) => (
+          <li className="app__flex p-text" key={`link-${item}`}>
+            <div />
+            <a href={`#${item}`}>{item}</a>
+          </li>
+        ))}
       </ul>
 
       <div className="app__navbar-menu">
@@ -34,15 +31,13 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {elements.map(
-                (item) => (
-                  <li key={item}>
-                    <a href={`#${item}`} onClick={() => setToggle(false)}>
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              {elements.map((item) => (
+                <li key={item}>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
           </motion.div>
         )}

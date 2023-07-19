@@ -51,10 +51,17 @@ const About = () => {
             Brasil e sinto que finalmente encontrei o meu caminho.
           </p>
         </motion.div>
-        <div className="media">
+        <motion.div
+          className="media"
+          variants={scaleVariants}
+          whileInView={scaleVariants.whileInView}
+        >
           <VideoPlayer />
-          <Image src={images.me} alt='Foto do victor com a blusa da kenzie, representando sua nova fase como programador'/>
-        </div>
+          <Image
+            src={images.me}
+            alt="Foto do victor com a blusa da kenzie, representando sua nova fase como programador"
+          />
+        </motion.div>
       </div>
     </>
   );

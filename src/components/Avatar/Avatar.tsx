@@ -11,16 +11,8 @@ const Avatar = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <Image
-         src={images.circle}
-         alt="Profile_bg"
-         className="circle"
-       />
-        <Image
-          src={images.perfil4}
-          alt="Profile_bg"
-          className="profile"
-        />
+        <Image src={images.circle} alt="Profile_bg" className="circle" />
+        <Image src={images.perfil4} alt="Profile_bg" className="profile" />
       </motion.div>
     </>
   );

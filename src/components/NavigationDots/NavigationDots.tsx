@@ -1,4 +1,3 @@
-
 interface INavigationDotsProps {
   active: string;
 }
@@ -13,7 +12,11 @@ const NavigationDots = ({ active }: INavigationDotsProps) => (
           title={`Navegar para a sessão ${item}`}
           content={`Navegar para a sessão ${item}`}
           className="app__navigation-dot"
-          style={active === item ? { backgroundColor: "#313BAC" } : { backgroundColor: "null" }}
+          style={
+            active === item
+              ? { backgroundColor: "#313BAC" }
+              : { backgroundColor: "null" }
+          }
         />
       )
     )}

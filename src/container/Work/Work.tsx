@@ -7,23 +7,24 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import "./Work.scss";
+import { IProjects } from "./@types";
 
 const Work = () => {
-  const [works, setWorks] = useState([]);
-  const [filterWork, setFilterWork] = useState([]);
+  const [works, setWorks] = useState<IProjects[] | null>(null);
+  const [filterWork, setFilterWork] = useState<IProjects[] | null>(null);
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
     const query = '*[_type == "works"]';
 
-    client.fetch(query).then((data: any) => {
+    client.fetch(query).then((data: IProjects[]) => {
       setWorks(data);
       setFilterWork(data);
     });
   }, []);
 
-  const handleWorkFilter = (item: any) => {
+  const handleWorkFilter = (item: string) => {
     setActiveFilter(item);
 
     setAnimateCard({ y: 100, opacity: 0 });
@@ -34,7 +35,9 @@ const Work = () => {
       if (item === "All") {
         setFilterWork(works);
       } else {
-        setFilterWork(works.filter((work: any) => work.tags.includes(item)));
+        if (works) {
+          setFilterWork(works.filter((work: any) => work.tags.includes(item)));
+        }
       }
     }, 500);
   };
@@ -70,10 +73,13 @@ const Work = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
       >
-        {filterWork.map((work: any, index) => (
+        {filterWork?.map((work, index) => (
           <div className="app__work-item" key={index}>
             <div className="app__work-img app__flex">
-              <img src={urlFor(work.imgUrl) as unknown as string} alt={work.name} />
+              <img
+                src={urlFor(work.imgUrl) as unknown as string}
+                alt={work.title}
+              />
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
                 transition={{

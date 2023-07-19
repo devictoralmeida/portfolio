@@ -16,7 +16,7 @@ const VideoPlayer = () => {
       });
     });
 
-    const currentRef = playerRef.current
+    const currentRef = playerRef.current;
 
     if (currentRef) {
       observer.observe(currentRef);
@@ -30,7 +30,11 @@ const VideoPlayer = () => {
   }, []);
 
   return (
-    <div className="player-wrapper" ref={playerRef} style={{height: "350px", width: "300px" }}>
+    <div
+      className="player-wrapper"
+      ref={playerRef}
+      style={{ height: "350px", width: "300px" }}
+    >
       {isInView && (
         <ReactPlayer
           className="react-player"
