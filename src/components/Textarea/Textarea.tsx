@@ -14,7 +14,7 @@ const Textarea = forwardRef(
     return (
       <div className="input-container">
         {label ? <label htmlFor={id}>{label}</label> : null}
-        <textarea ref={ref} id={id} error={!!error} {...rest} />
+        <textarea ref={ref} id={id} {...rest} />
         {error ? <span className="p-text">{error.message}</span> : null}
       </div>
     );

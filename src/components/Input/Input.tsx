@@ -15,7 +15,7 @@ const Input = forwardRef(
     return (
       <div className='input-container'>
         {label ? <label htmlFor={id}>{label}</label> : null}
-        <input ref={ref} id={id} error={!!error} {...rest} />
+        <input ref={ref} id={id} {...rest} />
         {error ? <span className="p-text">{error.message}</span> : null}
       </div>
     )
