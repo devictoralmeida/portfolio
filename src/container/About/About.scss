@@ -1,6 +1,6 @@
 .app__about {
   flex: 1;
-  width: 100%;
+  max-width: 100%;
   flex-direction: column;
 }
 
@@ -18,12 +18,13 @@
 
 .my-story {
   max-width: 1300px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 2rem;
   flex: 1;
-  padding-inline: 1.5rem;
+  
 
   h3 {
     font-size: 1.5rem;
@@ -32,25 +33,10 @@
 
   p {
     font-size: 1rem;
-  }
+    padding-inline: 1.5rem;
 
-  @media (max-width: 875px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
-
-    .text-story {
-      width: 100%;
-    }
-
-    .media {
-      width: 100%;
-
-      img {
-        max-height: 400px;
-        object-fit: contain;
-      }
+    @media (max-width: 450px) {
+      text-align: center;
     }
   }
 }
@@ -64,7 +50,7 @@
   margin-top: 2rem;
 
   img {
-    height: 350px;
+    height: 300px;
     object-fit: contain;
   }
 }
