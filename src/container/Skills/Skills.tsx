@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import { client, urlFor } from '@/app/client';
 import AppWrap from '@/wrapper/AppWrap';
@@ -44,7 +45,7 @@ const Skills = () => {
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
-          {skills?.map((skill, index) => (
+          {skills?.map((skill: any, index: number) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
@@ -53,9 +54,9 @@ const Skills = () => {
             >
               <div
                 className="app__flex"
-                style={{ backgroundColor: skill.bgColor }}
+                style={{ backgroundColor: skill!.bgColor }}
               >
-                <img src={urlFor(skill.icon)} alt={skill.name} />
+                <img src={urlFor(skill.icon) as unknown as string} alt={skill.name} />
               </div>
               <p className="p-text">{skill.name}</p>
             </motion.div>

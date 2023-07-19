@@ -6,8 +6,11 @@
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
+  --color-grey-2: #343b41;
   --brown-color: #46364a;
   --white-color: #ffffff;
+  --color-sucess: #3fe864;
+  --color-negative: #e83f5b;
 }
 
 * {
@@ -20,4 +23,29 @@
 body {
   height: 97vh;
   width: 97vw;
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.toast-sucess {
+  z-index: 200;
+}
+
+.toast-sucess {
+  background-color: var(--color-sucess);
+  color: var(--white-color);
+  font-family: "Inter", sans-serif;
+}
+
+.toast-sucess img,
+.toast-sucess svg {
+  fill: var(--color-sucess);
+  width: 28px;
+  height: 28px;
 }

@@ -16,13 +16,15 @@ const VideoPlayer = () => {
       });
     });
 
-    if (playerRef.current) {
-      observer.observe(playerRef.current);
+    const currentRef = playerRef.current
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (playerRef.current) {
-        observer.unobserve(playerRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);

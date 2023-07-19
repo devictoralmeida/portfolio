@@ -5,6 +5,8 @@ import About from '@/container/About/About';
 import Footer from '@/container/Footer/Footer';
 import Skills from '@/container/Skills/Skills';
 import Work from '@/container/Work/Work';
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 const Home = () => {
   return (
@@ -15,6 +17,7 @@ const Home = () => {
       <Skills />
       <Work />
       <Footer />
+      <ToastContainer />
     </main>
   )
 }
