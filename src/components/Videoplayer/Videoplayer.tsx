@@ -34,7 +34,7 @@ const VideoPlayer = () => {
           className="react-player"
           url="video.MP4"
           width="100%"
-          height="100%"
+          //height="100%"
           muted={true}
           playing={true}
           loop={true}

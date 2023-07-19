@@ -16,55 +16,45 @@ const About = () => {
         <span>minha história</span>
       </h2>
 
-      <div className="app__profiles">
+      <div className="story-container">
         <motion.div
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, type: "tween" }}
           className="my-story"
         >
-          <motion.div
-            className="text-story"
-            whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-            transition={{ duration: 0.5 }}
-          >
-            <h3 className="bold-text">
-              Amante da tecnologia e desenvolvedor de soluções inovadoras.
-            </h3>
-            <p className="p-text">
-              Desde que ganhei meu primeiro computador, eu não queria mais saber
-              de outra coisa, com ele eu conseguia ter tudo que eu precisava,
-              desde momentos de lazer, estudos e ainda me conectar com meus
-              amigos. O computador me despertou uma grande curiosidade em
-              entender como tudo aquilo funcionava.
-            </p>
-            <p className="p-text">
-              Entretanto a vida me levou para outros caminhos, onde me graduei
-              como nutricionista, me tornei professor e criei a minha própria
-              escola digital, conquistando mais de 500 alunos, mas essa não era
-              a jornada que eu queria seguir.
-            </p>
-            <p className="p-text">
-              Essa experiência me trouxe grandes aprendizados na área do
-              empreendedorismo, tecnologia e marketing.
-            </p>
-            <p className="p-text">
-              Mergulhar nesse meio digital reacendeu o meu desejo de entrar para
-              da área da tecnologia e desbravar esse mundo que veio pra ficar.
-            </p>
-            <p className="p-text">
-              Atualmente estudo desenvolvimento web fullstack na Kenzie Academy
-              Brasil e sinto que finalmente encontrei o meu caminho.
-            </p>
-          </motion.div>
-          <motion.div
-            className="media"
-            variants={scaleVariants}
-            whileInView={scaleVariants.whileInView}
-          >
-            <VideoPlayer />
-            <Image src={images.me} alt="My Photo" />
-          </motion.div>
+          <h3 className="bold-text">
+            Amante da tecnologia e desenvolvedor de soluções inovadoras.
+          </h3>
+          <p className="p-text">
+            Desde que ganhei meu primeiro computador, eu não queria mais saber
+            de outra coisa, com ele eu conseguia ter tudo que eu precisava,
+            desde momentos de lazer, estudos e ainda me conectar com meus
+            amigos. O computador me despertou uma grande curiosidade em entender
+            como tudo aquilo funcionava.
+          </p>
+          <p className="p-text">
+            Entretanto a vida me levou para outros caminhos, onde me graduei
+            como nutricionista, me tornei professor e criei a minha própria
+            escola digital, conquistando mais de 500 alunos, mas essa não era a
+            jornada que eu queria seguir.
+          </p>
+          <p className="p-text">
+            Essa experiência me trouxe grandes aprendizados na área do
+            empreendedorismo, tecnologia e marketing.
+          </p>
+          <p className="p-text">
+            Mergulhar nesse meio digital reacendeu o meu desejo de entrar para
+            da área da tecnologia e desbravar esse mundo que veio pra ficar.
+          </p>
+          <p className="p-text">
+            Atualmente estudo desenvolvimento web fullstack na Kenzie Academy
+            Brasil e sinto que finalmente encontrei o meu caminho.
+          </p>
         </motion.div>
+        <div className="media">
+          <VideoPlayer />
+          <Image src={images.me} alt='Foto do victor com a blusa da kenzie, representando sua nova fase como programador'/>
+        </div>
       </div>
     </>
   );
