@@ -38,7 +38,7 @@ const VideoPlayer = () => {
       {isInView && (
         <ReactPlayer
           className="react-player"
-          url="video.MP4"
+          url="https://youtube.com/shorts/orjDNRfK6UI?feature=share"
           width="100%"
           muted={true}
           playing={true}
