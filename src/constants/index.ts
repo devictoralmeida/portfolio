@@ -17,8 +17,10 @@ import perfil1 from "../assets/perfil1.png";
 import perfil3 from "../assets/perfil3.png";
 import perfil4 from "../assets/perfil4.png";
 import bg from '../assets/wp1.jpeg'
+import me from '../assets/me.png'
 
 const images = {
+  me,
   bg,
   perfil1,
   perfil3,

@@ -28,7 +28,7 @@ const VideoPlayer = () => {
   }, []);
 
   return (
-    <div className="player-wrapper" ref={playerRef}>
+    <div className="player-wrapper" ref={playerRef} style={{height: "350px", width: "350px" }}>
       {isInView && (
         <ReactPlayer
           className="react-player"

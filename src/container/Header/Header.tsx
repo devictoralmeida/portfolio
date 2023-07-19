@@ -8,7 +8,7 @@ import AppWrap from "@/wrapper/AppWrap";
 import Background from "@/components/Background/Background";
 import Avatar from "@/components/Avatar/Avatar";
 
-const scaleVariants = {
+export const scaleVariants = {
   whileInView: {
     scale: [0, 1],
     opacity: [0, 1],

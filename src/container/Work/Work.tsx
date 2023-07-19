@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import "./Work.scss";
-import Image from "next/image";
 
 const Work = () => {
   const [works, setWorks] = useState([]);
@@ -21,17 +20,15 @@ const Work = () => {
     client.fetch(query).then((data: any) => {
       setWorks(data);
       setFilterWork(data);
-      console.log(data)
     });
   }, []);
 
   const handleWorkFilter = (item: any) => {
     setActiveFilter(item);
-    // setAnimateCard([{ y: 100, opacity: 0 }]);
+
     setAnimateCard({ y: 100, opacity: 0 });
 
     setTimeout(() => {
-      // setAnimateCard([{ y: 0, opacity: 1 }]);
       setAnimateCard({ y: 0, opacity: 1 });
 
       if (item === "All") {
@@ -42,7 +39,6 @@ const Work = () => {
     }, 500);
   };
 
-  let img
   return (
     <>
       <h2 className="head-text">
