@@ -44,13 +44,14 @@
 .app__work-portfolio {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
+  
 
   .app__work-item {
-    width: 300px;
-    min-height: 400px;
+    width: 320px;
+    min-height: 420px;
     flex-direction: column;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -137,27 +138,35 @@
 }
 
 .app__work-content {
-  padding: 0.5rem;
   flex: 1;
   width: 100%;
   position: relative;
   flex-direction: column;
 
   h4 {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     line-height: 1.5;
 
     @media screen and (min-width: 2000px) {
       margin-top: 3rem;
     }
   }
+}
 
-  .app__work-tag {
-    position: absolute;
+.tags-container {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 0.75rem;
+}
 
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    background-color: #fff;
-    top: -25px;
+.app__work-tag {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #EDF2F8;
+
+  p {
+    color: black;
+    font-size: 0.75rem;
   }
 }

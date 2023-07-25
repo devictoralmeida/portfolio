@@ -61,13 +61,11 @@ const About = () => {
             alt="Gif animado do victor dando uma palestra sobre nutrição na época em que era professor"
             style={{ width: "250px" }}
             quality={100}
-            // priority={true}
           />
           <Image
             src={images.me}
             alt="Foto do victor com a blusa da kenzie, representando sua nova fase como programador"
             quality={100}
-            // priority={true}
           />
         </motion.div>
       </div>
