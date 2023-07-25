@@ -47,8 +47,8 @@ const About = () => {
             da área da tecnologia e desbravar esse mundo que veio pra ficar.
           </p>
           <p className="p-text">
-            Atualmente estudo desenvolvimento web fullstack na Kenzie Academy
-            Brasil e sinto que finalmente encontrei o meu caminho.
+            Atualmente estudo Análise e desenvolvimento de sistemas & Desenvolvimento Web Fullstack na Kenzie Academy
+            e sinto que finalmente encontrei o meu caminho.
           </p>
         </motion.div>
         <motion.div
@@ -56,7 +56,12 @@ const About = () => {
           variants={scaleVariants}
           whileInView={scaleVariants.whileInView}
         >
-          <VideoPlayer />
+          {/* <VideoPlayer /> */}
+          <Image
+            src={images.speech}
+            alt="Gif animado do victor dando uma palestra sobre nutrição na época em que era professor"
+            style={{ width: "250px" }}
+          />
           <Image
             src={images.me}
             alt="Foto do victor com a blusa da kenzie, representando sua nova fase como programador"

@@ -5,6 +5,7 @@ const Background = () => {
   return (
     <Image
       src={images.bg}
+      fill
       alt="Futuristic background image"
       className="background"
       quality={100}
