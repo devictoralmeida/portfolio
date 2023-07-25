@@ -22,33 +22,29 @@ const About = () => {
           className="my-story"
         >
           <h3 className="bold-text">
-            Amante da tecnologia e desenvolvedor de soluções inovadoras.
+            Amante da tecnologia e de desenvolvedor de soluções inovadoras.
           </h3>
           <p className="p-text">
-            Desde que ganhei meu primeiro computador, eu não queria mais saber
-            de outra coisa, com ele eu conseguia ter tudo que eu precisava,
-            desde momentos de lazer, estudos e ainda me conectar com meus
-            amigos. O computador me despertou uma grande curiosidade em entender
-            como tudo aquilo funcionava.
+            Meu nome é Victor Almeida, tenho 28 anos e sou de Fortaleza-CE. Sou
+            pós-graduado na área de nutrição esportiva, onde fui professor de
+            pós graduações e ministrei diversas palestras aqui no Ceará.
           </p>
           <p className="p-text">
-            Entretanto a vida me levou para outros caminhos, onde me graduei
-            como nutricionista, me tornei professor e criei a minha própria
-            escola digital, conquistando mais de 500 alunos, mas essa não era a
-            jornada que eu queria seguir.
+            Atualmente, estou cursando análise e desenvolvimento de sistemas na
+            Estácio e também participo da formação em desenvolvimento web da
+            Kenzie Academy. Nessa formação, tenho a oportunidade de trabalhar em
+            novos projetos semanalmente. Estou completamente apaixonado por essa
+            rotina e tenho me dedicado tanto que fui selecionado como monitor.
           </p>
           <p className="p-text">
-            Essa experiência me trouxe grandes aprendizados na área do
-            empreendedorismo, tecnologia e marketing.
+            Essas experiências ressaltam algumas características importantes que
+            possuo: Curiosidade e bastante vontade de aprender; sou um
+            entusiasta do estudo e do desenvolvimento profissional.
           </p>
           <p className="p-text">
-            Mergulhar nesse meio digital reacendeu o meu desejo de entrar para
-            da área da tecnologia e desbravar esse mundo que veio pra ficar.
-          </p>
-          <p className="p-text">
-            Atualmente estudo Análise e Desenvolvimento de Sistemas &
-            Desenvolvimento Web Fullstack na Kenzie Academy e sinto que
-            finalmente encontrei o meu caminho.
+            Com essa breve descrição sobre a minha trajetória, você podem ter
+            certeza que não medirei esforços para contribuir ao máximo com a
+            empresa e gerar resultados satisfatórios.
           </p>
         </motion.div>
         <motion.div
