@@ -66,15 +66,23 @@ const Footer = () => {
 
       <div className="app__footer-cards">
         <div className="app__footer-card">
-          <Image src={images.email} alt="email" />
-          <a href="mailto:victoremmanuelmn@gmail.com" className="p-text">
+          <Image src={images.email} alt="Botão para entrar em contato com o Victor pelo email" />
+          <a
+            href="mailto:victoremmanuelmn@gmail.com"
+            className="p-text"
+          >
             victoremmanuelmn@gmail.com
           </a>
         </div>
 
         <div className="app__footer-card">
-          <Image src={images.mobile} alt="mobile" />
-          <a href="tel: +55 (085) 99680-3000" className="p-text">
+          <Image src={images.wpp} alt="Botão para entrar em contato com o Victor pelo whatsapp" />
+          <a
+            href="https://api.whatsapp.com/send?phone=5585996803000&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio"
+            target="_blank"
+            rel="noreferrer"
+            className="p-text"
+          >
             (085) 99680-3000
           </a>
         </div>

@@ -14,8 +14,10 @@ import bg from "../assets/wp1.jpeg";
 import me from "../assets/me.png";
 import speech from "../assets/speech.gif";
 import speech2 from "../assets/speech2.gif";
+import wpp from '../assets/wpp.svg'
 
 const images = {
+  wpp,
   speech,
   speech2,
   me,

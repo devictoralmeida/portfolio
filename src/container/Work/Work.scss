@@ -51,7 +51,7 @@
 
   .app__work-item {
     width: 320px;
-    min-height: 420px;
+    min-height: 430px;
     flex-direction: column;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -144,7 +144,7 @@
   flex-direction: column;
 
   h4 {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     line-height: 1.5;
 
     @media screen and (min-width: 2000px) {
