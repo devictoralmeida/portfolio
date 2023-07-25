@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import "./Work.scss";
 import { IProjects } from "./@types";
+import { IWorks } from "../Skills/@types";
 
 const Work = () => {
   const [works, setWorks] = useState<IProjects[] | null>(null);
@@ -36,7 +37,7 @@ const Work = () => {
         setFilterWork(works);
       } else {
         if (works) {
-          setFilterWork(works.filter((work: any) => work.tags.includes(item)));
+          setFilterWork(works.filter((work) => work.tags.includes(item)));
         }
       }
     }, 500);
@@ -44,13 +45,12 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">
+      <h2 className="head-text title">
         Meus <span>Projetos</span>
       </h2>
 
-      <div className="app__work-filter">
+      {/* <div className="app__work-filter">
         {[
-          "Javascript",
           "Typescript",
           "Styled Components",
           "React JS",
@@ -66,7 +66,7 @@ const Work = () => {
             {item}
           </div>
         ))}
-      </div>
+      </div> */}
 
       <motion.div
         animate={animateCard}

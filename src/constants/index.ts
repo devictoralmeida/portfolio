@@ -1,5 +1,4 @@
 import email from "../assets/email.png";
-import mobile from "../assets/mobile.png";
 import css from "../assets/css.png";
 import git from "../assets/git.png";
 import html from "../assets/html.png";
@@ -25,7 +24,6 @@ const images = {
   perfil4,
   styled,
   email,
-  mobile,
   css,
   git,
   html,
