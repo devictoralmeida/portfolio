@@ -8,7 +8,7 @@ const Background = () => {
       fill
       alt="Futuristic background image"
       className="background"
-      quality={100}
+      priority={true}
     />
   );
 };

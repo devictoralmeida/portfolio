@@ -1,4 +1,3 @@
-import NavigationDots from "@/components/NavigationDots/NavigationDots";
 import SocialMedia from "@/components/SocialMedia/SocialMedia";
 
 interface IAppWrapProps {
@@ -19,7 +18,6 @@ const AppWrap = ({ Component, idName, classNames }: IAppWrapProps) =>
             <p className="p-text">Todos os direitos reservados</p>
           </div>
         </div>
-        <NavigationDots active={idName} />
       </div>
     );
   };
