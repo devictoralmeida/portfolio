@@ -22,19 +22,22 @@ const About = () => {
           className="my-story"
         >
           <h3 className="bold-text">
-            Amante da tecnologia e de desenvolvedor de soluções inovadoras.
+            Amante da tecnologia e desenvolvedor de soluções inovadoras.
           </h3>
           <p className="p-text">
-            Meu nome é Victor Almeida, tenho 28 anos e sou de Fortaleza-CE. Sou
-            pós-graduado na área de nutrição esportiva, onde fui professor de
-            pós graduações e ministrei diversas palestras aqui no Ceará.
+            Meu nome é <strong>Victor Almeida</strong>, tenho 28 anos e sou de
+            Fortaleza-CE. Sou pós-graduado na área de nutrição esportiva, onde
+            fui professor de pós graduações e ministrei diversas palestras aqui
+            no Ceará.
           </p>
           <p className="p-text">
             Atualmente, estou cursando análise e desenvolvimento de sistemas na
-            Estácio e também participo da formação em desenvolvimento web da
-            Kenzie Academy. Nessa formação, tenho a oportunidade de trabalhar em
-            novos projetos semanalmente. Estou completamente apaixonado por essa
-            rotina e tenho me dedicado tanto que fui selecionado como monitor.
+            Estácio e também participo da formação em
+            <strong> Desenvolvimento Web Fullstack </strong> da Kenzie Academy.
+            Nessa formação, tenho a oportunidade de trabalhar em
+            <strong> novos projetos semanalmente </strong>. Estou completamente
+            apaixonado por essa rotina e tenho me dedicado tanto que fui
+            selecionado como monitor.
           </p>
           <p className="p-text">
             Essas experiências ressaltam algumas características importantes que
@@ -52,12 +55,13 @@ const About = () => {
           variants={scaleVariants}
           whileInView={scaleVariants.whileInView}
         >
-          <Image
-            src={images.speech}
-            alt="Gif animado do victor dando uma palestra sobre nutrição na época em que era professor"
-            style={{ width: "250px" }}
-            quality={100}
-          />
+          <div className="box">
+            <Image
+              src={images.speech}
+              alt="Gif animado do victor dando uma palestra sobre nutrição na época em que era professor"
+              style={{ height: "250px", width: "250px" }}
+            />
+          </div>
           <Image
             src={images.me}
             alt="Foto do victor com a blusa da kenzie, representando sua nova fase como programador"

@@ -14,9 +14,12 @@ import me from "../assets/me.png";
 import speech from "../assets/speech.gif";
 import speech2 from "../assets/speech2.gif";
 import wpp from '../assets/wpp.svg'
+import logo from '../assets/logo.png';
+import node from '../assets/node.png'
 
 const images = {
   wpp,
+  logo,
   speech,
   speech2,
   me,
@@ -32,6 +35,7 @@ const images = {
   sass,
   typescript,
   circle,
+  node,
 };
 
 export default images;

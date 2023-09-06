@@ -22,7 +22,8 @@
 
 body {
   height: 97vh;
-  width: 99vw;
+  width: 98vw;
+  overflow-x: hidden;
 }
 
 .thank-you {

@@ -11,7 +11,7 @@
   align-items: center;
   flex-wrap: wrap;
 
-  margin: 4rem 0 2rem;
+  margin: 4rem 0 3rem 0;
 
   .app__work-filter-item {
     padding: 0.5rem 1rem;
@@ -51,7 +51,7 @@
 
   .app__work-item {
     width: 320px;
-    min-height: 430px;
+    min-height: 470px;
     flex-direction: column;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -157,11 +157,12 @@
   margin-top: 1rem;
   width: 100%;
   display: flex;
-  gap: 0.75rem;
+  justify-content: space-around;
 }
 
 .app__work-tag {
   padding: 0.5rem;
+  list-style: none;
   border-radius: 10px;
   background-color: #EDF2F8;
 
@@ -169,8 +170,4 @@
     color: black;
     font-size: 0.75rem;
   }
-}
-
-.title {
-  margin-bottom: 4rem;
 }
