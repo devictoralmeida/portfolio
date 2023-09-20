@@ -1,5 +1,6 @@
 "use client";
 import { client } from "@/app/client";
+import emailjs from '@emailjs/browser'
 import { zodResolver } from "@hookform/resolvers/zod";
 import images from "@/constants";
 import AppWrap from "@/wrapper/AppWrap";
@@ -17,16 +18,8 @@ import Input from "@/components/Input/Input";
 import Textarea from "@/components/Textarea/Textarea";
 
 const Footer = () => {
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    message: "",
-  });
-
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-
-  const { username, email, message } = formData;
 
   const {
     register,
@@ -38,26 +31,34 @@ const Footer = () => {
     resolver: zodResolver(contactFormSchema),
   });
 
-  const submit: SubmitHandler<TcontactFormSchema> = (formData) => {
+  const submit: SubmitHandler<TcontactFormSchema> = async(formData) => {
+    const { username, email, message } = formData;
+
     setLoading(true);
 
-    const contact = {
-      _type: "contact",
-      name: formData.username,
-      email: formData.email,
-      message: formData.message,
-    };
+    const templateParams = {
+      from_name: username,
+      email: email,
+      message: message,
+    }
 
-    client.create(contact).then(() => {
+    emailjs.send("service_iued51p", "template_q1yim6e", templateParams, "zy51brpf20hbhU8jQ")
+    .then((response) => {
+      console.log('Email enviado', response.status, response.text)
+
       setLoading(false);
+
       setIsFormSubmitted(true);
-    });
 
-    toast.success("Contato enviado com sucesso", {
-      className: "toast-sucess",
-    });
-
-    reset();
+      toast.success("Contato enviado com sucesso", {
+        className: "toast-sucess",
+      });
+  
+      reset();
+    })
+    .catch((err) => {
+      console.log("ERRO: ", err)
+    })
   };
 
   return (

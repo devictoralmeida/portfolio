@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@hookform/resolvers": "^3.1.1",
     "@sanity/client": "^6.1.7",
     "@sanity/image-url": "^1.0.2",
@@ -20,8 +21,10 @@
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "framer-motion": "^10.12.18",
+    "fs": "^0.0.1-security",
     "immer": "^10.0.2",
     "next": "^13.4.10",
+    "nodemailer": "^6.9.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.45.2",
@@ -33,5 +36,9 @@
     "sass": "^1.63.6",
     "typescript": "5.1.6",
     "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.10",
+    "ts-node-dev": "^2.0.0"
   }
 }

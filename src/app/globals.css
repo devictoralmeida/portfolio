@@ -34,7 +34,8 @@ body {
   gap: 2rem;
 }
 
-.toast-sucess {
+.toast-sucess,
+.toast-error {
   z-index: 200;
 }
 
@@ -44,9 +45,22 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.toast-error {
+  background-color: var(--color-negative);
+  color: var(--white-color);
+  font-family: "Inter", sans-serif;
+}
+
 .toast-sucess img,
 .toast-sucess svg {
   fill: var(--color-sucess);
+  width: 28px;
+  height: 28px;
+}
+
+.toast-error img,
+.toast-error svg {
+  fill: var(--color-negative);
   width: 28px;
   height: 28px;
 }
